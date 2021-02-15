@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Invoice </title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		  <link rel="stylesheet" href="./css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="./js/invoice.js"></script>
+	</head>
+	<body onload="info()">
+	
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Jewellery </span>Only</h1>
+				</div>
+				<nav>
+					<ul>
+						<li class="current">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="men's.html">Men's</a>
+						</li>
+						<li>
+							<a href="women's.html">Women's</a>
+						</li>
+						<li>
+							<a href="shopping.html">Shopping</a>
+						</li>
+						<li>
+							<a href="invoice.html">Invoice</a>
+						</li>
+						<li>
+							<a href="login.html">LOGOUT</a>
+						</li>
+					</ul>
+				</nav>
+			
+			</div>
+		</header>
+		
+		<section id="showcase">
+			<div class="container">
+				<h1>Invoice</h1>
+			</div>
+		</section>
+
+		
+
+<div class="row">
+  <div class="col-75">
+    <div class="forum">
+	<div class="backside">
+<div class="ring">
+<table>
+<tr>
+<td>
+<h2>Product Name</h2>
+<hr> 
+</td>
+<td>
+<h2>Price</h2>
+<hr> 
+</td>
+<td>
+<h2>Quantity</h2>
+<hr> 
+</td>
+<td>
+<h2>Totals</h2>
+<hr> 
+</td>
+<td>
+<h2>Final Amount</h2>
+<hr> 
+</td>
+</tr>
+<tr>
+<td>
+<h3>Jewellery</h3>
+</td>
+<td>
+<h3 id="cal"></h3>
+</td>
+<td>
+<h3 id="quan"></h3>
+</td>
+<td>
+<h3 id="subtotal"></h3>
+<h3 id="taxes1"></h3>
+<h3 id="taxes2"></h3>
+</td>
+<td>
+<h3 id="final"></h3>
+</tr>
+</table>
+</div>
+
+      <form action="home.html" onsubmit="invoice()">
+      
+        <div class="row">
+          <div class="col-50">
+ <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Kishan Thakkar" required>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="kishan11295@gmail.com" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="1234 ridgewood avenue" required>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Montreal" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="QC" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="A3R T5S" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="KISHAN Thakkar" required>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1234-5678-9012-3456" required>
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="JANUARY" required>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2024" required>
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="362" required>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+ 
+        <input type="submit" value="Do Payment" class="btn">
+		<button class="btn" onclick="blank()">Clear</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</div>
+
+      
+	
+	<footer>
+		<div class="sm">
+		<a href="https://www.facebook.com/"><img src="./media/facebook.png"></a>
+		<a href="https://www.twitter.com/"> <img src="./media/twitter.png"></a>
+		<a href="https://www.instagram.com/"> <img src="./media/instagram.png"></a>
+		<a href="https://www.linkedin.com/"> <img src="./media/linked-in.png"></a>
+		</div>
+			<p>Jewellery Only - Copyright &copy; 2020- Kishan Thakkar(2013644)</p>
+		</footer>
+	
+	</body>
+
+</html>

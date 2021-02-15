@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Shopping</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script src="./js/search.js"></script>
+		<script src="./js/invoice.js"></script>
+	</head>
+	<body>
+		<a name="top"></a>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Jewellery </span>Only</h1>
+				</div>
+				<nav>
+					<ul>
+						<li class="current">
+							<a href="home.html">Home</a>
+						</li>
+						<li>
+							<a href="men's.html">Men's</a>
+						</li>
+						<li>
+							<a href="women's.html">Women's</a>
+						</li>
+						<li>
+							<a href="shopping.html">Shopping</a>
+						</li>
+						<li>
+							<a href="invoice.html">Invoice</a>
+						</li>
+						<li>
+							<a href="login.html">LogOut</a>
+						</li>
+						
+					</ul>
+				</nav>
+			
+			</div>
+		</header>
+		
+		<section id="showcase">
+			<div class="container">
+				<h1>Shopping</h1>
+				<p> Search Your Product Here</p>
+					
+					<input style="width:100%;font-size:14pt;text-align:center;" type="text" placeholder="Search Product ..." id="myText" required><br>
+					<center>
+					<button style="width:100%;font-size:14pt;" onclick="myFunction()"  type="Search">Search</button>
+					</center>
+					
+				<p> Price of products selected</p>
+					
+					<input style="width:100%;font-size:14pt;text-align:center;" type="text" value="0" id="fee" required><br>
+					<center>
+					<button style="width:100%;font-size:14pt;" onclick="reder()"  type="Search">Go to Invoice</button>
+					</center>	
+			</div>
+		</section>
+		
+		
+				
+		<section>
+			  <section id="boxes">
+			  <div id ="result">
+			  
+			  </div>
+			<div class="container">
+			
+				<div class="box" id="handcrafted">
+				<a href="./media/mr1.jpg">
+					<img src="./media/mr1.jpg"></a>
+					<h3>Hand-Crafted</h3>
+					<p>
+						This Ring is crafted with one artist hand only. This ring is Untouched and precious. 
+					</p>
+					<p>
+					<input type="checkbox" id="j1" value="600">
+					<label for="vehicle1"> CAD 600 </label><br><br>
+					<label for="quantity">Quantity (between 1 and 5):</label>
+					<input type="number" id="volume1" name="quantity" min="1" max="5" value="0">
+					<input type="submit" onclick="calculate()" value="Submit">
+					</p>
+				</div>
+				<div class="box" id="royal">
+				<a href="./media/mr2.jpg">
+					<img src="./media/mr2.jpg"></a>
+					<h3>Royal</h3>
+					<p>
+						 This Ring will suit to them who have some Royal family background or live like a Royal's.  
+					</p>
+					<p>
+					<input type="checkbox" id="j2" value="700">
+					<label for="vehicle1"> CAD 700 </label><br><br>
+					<label for="quantity">Quantity (between 1 and 5):</label>
+					<input type="number" id="volume2" name="quantity" min="1" max="5" value="0">
+					<input type="submit" onclick="calculate()" value="Submit">
+					</p>
+				</div>
+				<div class="box" id="class">
+				<a href="./media/mr3.jpg">
+					<img src="./media/mr3.jpg"></a>
+					<h3>Class</h3>
+					<p>
+						This is for the class that affords the lavishness yet the elegance in the look.
+					</p>
+					<p>
+					<input type="checkbox" id="j3" value="800">
+					<label for="vehicle1"> CAD 800 </label><br><br>
+					<label for="quantity">Quantity (between 1 and 5):</label>
+					<input type="number" id="volume3" name="quantity" min="1" max="5" value="0">
+					<input type="submit" onclick="calculate()"  value="Submit">
+					</p>
+				</div>
+				<div class="box" id="stone">
+				<a href="./media/wr1.jpg">
+					<img src="./media/wr1.jpg"></a>
+					<h3>Stone</h3>
+					<p>
+						 This Ring hard to find and even make because it is made up of pure sea shell stones. Anyone can fall in love with this Ring.
+					</p>
+					<p>
+					<input type="checkbox" id="j4" value="900">
+					<label for="vehicle1"> CAD 900 </label><br><br>
+					<label for="quantity">Quantity (between 1 and 5):</label>
+					<input type="number" id="volume4" name="quantity" min="1" max="5" value="0">
+					<input type="submit" onclick="calculate()" value="Submit">
+					</p>
+				</div>
+				
+				<div class="box" id="necklace">
+				<a href="./media/wr2.jpg">
+					<img src="./media/wr2.jpg"></a>
+					<h3>Necklace</h3>
+					<p>
+						 This type of Nacklaces are very rare to wear, because pure love symbol and now a days pure love is very rare.
+					</p>
+					<p>
+					<input type="checkbox" id="j5" value="1000">
+					<label for="vehicle1"> CAD 1000 </label><br><br>
+					<label for="quantity">Quantity (between 1 and 5):</label>
+					<input type="number" id="volume5" name="quantity" min="1" max="5" value="0">
+					<input type="submit" onclick="calculate()" value="Submit">
+					</p>
+				</div>
+				<div class="box" id="wedding">
+				<a href="./media/wr3.jpg">
+					<img src="./media/wr3.jpg"></a>
+					<h3>Wedding</h3>
+					<p>
+						 Wedding can't be done without this ring because it is only made for that purpose to fulfil the wish of Bride.
+					</p>
+					<p>
+					<input type="checkbox" id="j6" value="1100">
+					<label for="vehicle1"> CAD 1100 </label><br><br>
+					<label for="quantity">Quantity (between 1 and 5):</label>
+					<input type="number" id="volume6" name="quantity" min="1" max="5" value="0">
+					<input type="submit" onclick="calculate()" value="Submit">
+					</p>
+				</div>
+				
+			
+			</div>
+		
+		</section>
+		</section>
+		
+		<a href="#top">Back to top</a>
+		<footer>
+		<div class="sm">
+		<a href="https://www.facebook.com/"><img src="./media/facebook.png"></a>
+		<a href="https://www.twitter.com/"> <img src="./media/twitter.png"></a>
+		<a href="https://www.instagram.com/"> <img src="./media/instagram.png"></a>
+		<a href="https://www.linkedin.com/"> <img src="./media/linked-in.png"></a>
+		</div>
+			<p>Jewellery Only - Copyright &copy; 2020- Kishan Thakkar(2013644)</p>
+		</footer>
+	
+	</body>
+
+</html>
